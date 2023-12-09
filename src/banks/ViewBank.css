@@ -1,0 +1,10 @@
+/* In your CSS file or inline style block */
+.list-group-item-text {
+    font-size: 18px; 
+    color: #333; 
+    font-style:oblique;
+  }
+  
+  .list-group-item-border {
+    border-top: 1px solid #474646; 
+  }

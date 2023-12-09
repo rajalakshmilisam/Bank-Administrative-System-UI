@@ -1,0 +1,78 @@
+.registerPage{
+  /* background :linear-gradient(rgb(117, 116, 116),rgba(41, 39, 39, 0.5)),url('../src/pages/bg-pic-final3.jpg');  */
+  background :linear-gradient(rgb(49, 55, 72),rgba(84, 84, 88, 0.5)),url('bg-pic3.jpg'); 
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.register-container {
+    background-color: rgba(3, 23, 65, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .register-container h2 {
+    margin-bottom: 20px;
+    color:aliceblue;
+  }
+  
+  .form-control {
+    border-radius: 0;
+  }
+  
+  .btn-success {
+    border-radius: 0;
+  }
+  
+  .btn-default {
+    border-radius: 0;
+    background-color: #f8f9fa;
+    border-color: #7ca6cf;
+    color: #2a2a2a;
+  }
+
+  .form-label strong {
+    font-weight: bold;
+    font-style: italic;
+    color: #d5d3e0; 
+    display: block; 
+    margin-bottom: 5px;
+  }
+
+  .gender-style{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-check{
+    display: flex;
+    align-items:flex-start;
+  }
+
+  .form-check-input{
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+
+  .gender-label{
+    margin-left: 5px;
+    /* margin-right: 15px; */
+  }
+
+  .alert-success {
+    background-color: #dff0d8; 
+    color: #3c763d; /* Dark green text color */
+    border-color: #d6e9c6; /* Light green border color */
+    padding: 10px; /* Padding for spacing */
+    margin-bottom: 20px; /* Margin at the bottom of the message */
+    border-radius: 4px; /* Rounded corners */
+  }

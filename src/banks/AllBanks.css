@@ -1,0 +1,65 @@
+
+.allbanks {
+  background : linear-gradient(rgba(214, 207, 207, 0.832),rgba(122, 118, 164, 0.5));
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(16, 15, 15, 0.1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #aca0a0;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .table th {
+    background-color: #2c2f49;
+    color: #fff;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #ddbfbf;
+  }
+  
+  .all-banks-container {
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  h2 {
+    font-size: 30px;
+    font-style: oblique;
+    color: #141d28;
+    margin-top: 0; 
+    margin-bottom: 5px; 
+    text-align: center; 
+  }
+
+  .bank-details-header {
+    font-size: 30px;
+    color: #272238;
+    text-align: center;
+    align-self:first baseline;
+  }

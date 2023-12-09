@@ -1,0 +1,49 @@
+
+@import "~font-awesome/css/font-awesome.css";
+
+.dashboard-sidebar {
+  background : linear-gradient(rgba(242, 233, 233, 0.5),rgba(41, 39, 39, 0.5)),url('../src/pages/bg-pic-final3.jpg'); 
+  text-decoration-color: rgb(247, 225, 197);
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .sidebar{
+    background-color:#adadb7;
+    width: 15rem;
+  }
+
+  .nav-link {
+    color: rgb(241, 219, 219); 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgb(139, 142, 149); 
+    color: #0d0d0e;
+    border-radius: 10px;
+    box-shadow:#15161a;
+    box-sizing:content-box;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+
+  .dashboard-header {
+    background-color: #d6d2e0; 
+    padding: 10px 40px;
+    text-align: center;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem; 
+    margin: 1% ;
+    text-align: center;
+    text-shadow: 2px 2px 2px #17181d;
+  }
+
+  .bold-text{
+    font-size:18px;
+    font-weight: bold;
+    font-style: italic;
+  }

@@ -1,0 +1,33 @@
+/* Home.css */
+.home-container {
+  /*  */
+    /* background :linear-gradient(rgb(229, 232, 231),rgba(65, 63, 63, 0.5)),url('bg-pic4.png');  */
+    background-image: url("bg-pic4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    text-align: left;
+    color: #2a2a34;
+  }
+  
+  .btn-primary {
+    background-color: #16283b;
+    color: #d9cfed;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2a242e;
+  }

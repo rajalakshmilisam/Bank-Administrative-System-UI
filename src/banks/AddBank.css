@@ -1,0 +1,21 @@
+/* .addbank{
+    /* background : linear-gradient(rgba(214, 207, 207, 0.832),rgba(122, 118, 164, 0.5)); */
+    /* padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(101, 98, 98, 0.1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+/* } */ 
+
+.alert-success {
+    background-color: #dff0d8; /* Green background color */
+    color: #3c763d; /* Dark green text color */
+    border-color: #d6e9c6; /* Light green border color */
+    padding: 10px; /* Padding for spacing */
+    margin-bottom: 20px; /* Margin at the bottom of the message */
+    border-radius: 4px; /* Rounded corners */
+  }

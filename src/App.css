@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.AppHeader{
+  background-color: rgb(156, 159, 182);
+  text-shadow: black;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.h2{
+  text-align: right;
+  text-decoration: double;
+  text-emphasis-color: black;
+}

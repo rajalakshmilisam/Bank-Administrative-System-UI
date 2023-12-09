@@ -1,0 +1,26 @@
+.header-bg{
+    background-color: #5656588c;
+    padding: 2px;
+  }
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+  .logo{
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+  }
+  
+  .logo-container h4{
+    margin: 0;
+    font-size: large;
+    font-family:cursive;
+    font-style: italic;
+    font-weight: bold;
+    color: #16283b
+  }
