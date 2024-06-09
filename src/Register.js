@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./register.css";
 import { FaUserPlus } from "react-icons/fa";
+import config from "src/config.js";
 
 function Register() {
   const [userName, setUserName] = useState("");
@@ -54,7 +55,7 @@ function Register() {
     }
 
     try {
-      await axios.post("http://localhost:8080/api/user/registeruser", {
+      await axios.post(`${config.backendurl}/api/user/registeruser`, {
         userName: userName,
         email: email,
         password: password,
