@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Filter.css'
-import config from "../config.js";
+import API_BASE_URL from "../config.js";
 
 function BankSearch() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -24,7 +24,7 @@ function BankSearch() {
   const searchBankByName = async (query) => {
     try {
       setIsLoading(true);
-      const response = await axios.get(`${config.backendurl}/bank/findBankByName?name=${query}`);
+      const response = await axios.get(`http://bank-api:9090/bank/findBankByName?name=${query}`);
       const { message, listOfBanksDTO } = response.data;
 
       if (listOfBanksDTO.length === 0) {

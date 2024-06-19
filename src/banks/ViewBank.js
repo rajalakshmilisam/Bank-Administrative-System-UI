@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
 import './ViewBank.css'
-import config from "../config.js";
+import API_BASE_URL from "../config.js";
 
 export default function ViewBank() {
   const [bank, setBank] = useState({
@@ -21,7 +21,7 @@ export default function ViewBank() {
 
   const loadBank = async (id) => {
     const result = await axios.get(
-      `${config.backendurl}:8080/bank/fetchById/${id}`
+      `http://bank-api:9090/bank/fetchById/${id}`
     );
     if (result.data.listOfBanksDTO.length > 0) {
       setBank(result.data.listOfBanksDTO[0]);

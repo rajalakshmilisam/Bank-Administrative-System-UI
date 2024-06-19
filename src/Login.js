@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./login.css";
 import { FaSignInAlt } from 'react-icons/fa';
-import config from "./config.js";
+import API_BASE_URL from "./config.js";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -36,7 +36,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        `${config.backendurl}/api/user/loginuser`,
+        'http://bank-api:9090/api/user/loginuser',
         {
           email: email,
           password: password,

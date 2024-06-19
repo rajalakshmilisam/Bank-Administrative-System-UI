@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./register.css";
 import { FaUserPlus } from "react-icons/fa";
-import config from "./config.js";
+import API_BASE_URL from "./config.js";
 
 function Register() {
   const [userName, setUserName] = useState("");
@@ -55,7 +55,7 @@ function Register() {
     }
 
     try {
-      await axios.post(`${config.backendurl}/api/user/registeruser`, {
+      await axios.post('http://bank-api:9090/api/user/registeruser', {
         userName: userName,
         email: email,
         password: password,

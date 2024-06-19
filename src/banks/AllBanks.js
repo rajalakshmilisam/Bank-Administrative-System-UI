@@ -4,7 +4,7 @@ import { Table } from "react-bootstrap";
 import "./AllBanks.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom';
-import config from "../config.js";
+import API_BASE_URL from "../config.js";
 
 const AllBanks = ({ bank, onLogout }) => {
   const [banks, setBanks] = useState([]);
@@ -16,7 +16,7 @@ const AllBanks = ({ bank, onLogout }) => {
   const loadBanks = async () => {
     try {
       const response = await axios.get(
-        `${config.backendurl}/bank/fetchAllBanks`
+        'http://bank-api:9090/bank/fetchAllBanks'
       );
       setBanks(response.data.listOfBanksDTO);
     } catch (error) {
