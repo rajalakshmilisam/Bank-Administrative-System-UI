@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./login.css";
 import { FaSignInAlt } from 'react-icons/fa';
-import config from "src/config.js";
+import config from "./config.js";
 
 function Login() {
   const [email, setEmail] = useState("");

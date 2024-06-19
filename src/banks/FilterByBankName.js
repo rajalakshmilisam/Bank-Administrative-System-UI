@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Filter.css'
-import config from "src/config.js";
+import config from "../config.js";
 
 function BankSearch() {
   const [searchQuery, setSearchQuery] = useState('');
