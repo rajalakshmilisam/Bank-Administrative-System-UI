@@ -36,7 +36,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        'http://bank-api:9090/api/user/loginuser',
+        'http://localhost:9090/api/user/loginuser',
         {
           email: email,
           password: password,

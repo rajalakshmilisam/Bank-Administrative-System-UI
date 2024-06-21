@@ -16,7 +16,7 @@ const AllBanks = ({ bank, onLogout }) => {
   const loadBanks = async () => {
     try {
       const response = await axios.get(
-        'http://bank-api:9090/bank/fetchAllBanks'
+        `${process.env.REACT_APP_API_BASE_URL}/bank/fetchAllBanks`
       );
       setBanks(response.data.listOfBanksDTO);
     } catch (error) {

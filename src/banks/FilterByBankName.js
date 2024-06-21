@@ -24,7 +24,7 @@ function BankSearch() {
   const searchBankByName = async (query) => {
     try {
       setIsLoading(true);
-      const response = await axios.get(`http://bank-api:9090/bank/findBankByName?name=${query}`);
+      const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/bank/findBankByName?name=${query}`);
       const { message, listOfBanksDTO } = response.data;
 
       if (listOfBanksDTO.length === 0) {
