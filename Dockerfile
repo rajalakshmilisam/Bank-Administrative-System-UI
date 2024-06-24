@@ -2,10 +2,13 @@ FROM node:latest as builder
 WORKDIR /app
 COPY package*.json .
 RUN npm install
-COPY .env.production .env
-
+# COPY .env.production .env
+ARG REACT_APP_API_BASE_URL
+ENV REACT_APP_API_BASE_URL=${REACT_APP_API_BASE_URL}
 COPY . .
 RUN rm -f .env.local
+RUN rm -f .env.production
+
 
 RUN npx update-browserslist-db@latest
 RUN npm run build
