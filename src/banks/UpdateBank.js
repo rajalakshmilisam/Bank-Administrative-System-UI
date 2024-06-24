@@ -88,7 +88,7 @@ export default function UpdateBank() {
   const loadBank = async (id) => {
     try {
       const result = await axios.get(
-        `http://localhost:9090/bank/fetchById/${id}`
+        `${process.env.REACT_APP_API_BASE_URL}/bank/fetchById/${id}`
       );
       if (result.data.listOfBanksDTO.length > 0) {
         setBank(result.data.listOfBanksDTO[0]);

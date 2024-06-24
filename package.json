@@ -50,5 +50,6 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "proxy": "http://bank-api-cluster-service:9090"
 }

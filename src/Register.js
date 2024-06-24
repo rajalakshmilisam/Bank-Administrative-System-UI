@@ -3,7 +3,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./register.css";
 import { FaUserPlus } from "react-icons/fa";
-import a50dfbab1f05 from "./config.js";
 
 function Register() {
   const [userName, setUserName] = useState("");
