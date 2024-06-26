@@ -2,10 +2,8 @@ FROM node:latest as builder
 WORKDIR /app
 COPY package*.json .
 RUN npm install
-COPY .env.local .env
 
 COPY . .
-RUN rm -f .env.production
 
 RUN npx update-browserslist-db@latest
 RUN npm run build
