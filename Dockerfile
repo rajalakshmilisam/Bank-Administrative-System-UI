@@ -3,8 +3,6 @@ WORKDIR /app
 COPY package*.json .
 RUN npm install
 # COPY .env.production .env
-ARG REACT_APP_API_BASE_URL
-ENV REACT_APP_API_BASE_URL=${REACT_APP_API_BASE_URL}
 COPY . .
 
 RUN npx update-browserslist-db@latest
