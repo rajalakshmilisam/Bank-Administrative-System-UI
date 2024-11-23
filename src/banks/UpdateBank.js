@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import './UpdateBank.css'
-import config from './config';
+import config from '../config';
 
 export default function UpdateBank() {
   const [notification, setNotification] = useState("");

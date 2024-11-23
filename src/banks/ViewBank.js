@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
 import './ViewBank.css'
-import config from './config';
+import config from '../config';
 
 export default function ViewBank() {
   const [bank, setBank] = useState({

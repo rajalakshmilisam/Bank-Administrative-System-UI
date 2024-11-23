@@ -4,7 +4,7 @@ import { Table } from "react-bootstrap";
 import "./AllBanks.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom';
-import config from './config';
+import config from '../config';
 
 const AllBanks = ({ bank, onLogout }) => {
   const [banks, setBanks] = useState([]);

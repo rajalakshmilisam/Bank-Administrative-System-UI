@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./login.css";
 import { FaSignInAlt } from 'react-icons/fa';
-import API_BASE_URL from "./config.js";
+import config from './config';
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -36,7 +36,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        `${window.env?.REACT_APP_API_BASE_URL}/api/user/loginuser`,
+        `${config.apiBaseUrl}/api/user/loginuser`,
         {
           email: email,
           password: password,
