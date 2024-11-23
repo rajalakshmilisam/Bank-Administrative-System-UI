@@ -1,4 +1,5 @@
-const API_BASE_URL = process.env.API_BASE_URL;
+const apiBaseUrl = window.env?.REACT_APP_API_BASE_URL || "https://localhost:9090";
 
-export default API_BASE_URL;
-  
+export default {
+  apiBaseUrl,
+};

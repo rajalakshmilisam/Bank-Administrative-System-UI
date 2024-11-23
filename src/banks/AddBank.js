@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./AddBank.css";
-import API_BASE_URL from "../config.js";
+import config from './config';
 
 function AddBank() {
   const [notification, setNotification] = useState("");
@@ -68,7 +68,7 @@ function AddBank() {
 
     if (validateForm()) {
       try {
-        await axios.post(`${window.env?.REACT_APP_API_BASE_URL}/bank/addBank`, bank);
+        await axios.post(`${config.apiBaseUrl}/bank/addBank`, bank);
 
         setSuccessMessage("Successfully added the bank!");
         setNotification("");

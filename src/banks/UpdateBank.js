@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import './UpdateBank.css'
-import API_BASE_URL from "../config.js";
+import config from './config';
 
 export default function UpdateBank() {
   const [notification, setNotification] = useState("");
@@ -75,7 +75,7 @@ export default function UpdateBank() {
 
     if (validateForm()) {
       try {
-        await axios.put(`${window.env?.REACT_APP_API_BASE_URL}/bank/updateBank/${id}`, bank);
+        await axios.put(`${config.apiBaseUrl}/bank/updateBank/${id}`, bank);
         setSuccessMessage("Successfully updated the bank!");
         setNotification("");
         navigate("/dashboard/allbanks");
@@ -88,7 +88,7 @@ export default function UpdateBank() {
   const loadBank = async (id) => {
     try {
       const result = await axios.get(
-        `${window.env?.REACT_APP_API_BASE_URL}/bank/fetchById/${id}`
+        `${config.apiBaseUrl}/bank/fetchById/${id}`
       );
       if (result.data.listOfBanksDTO.length > 0) {
         setBank(result.data.listOfBanksDTO[0]);
