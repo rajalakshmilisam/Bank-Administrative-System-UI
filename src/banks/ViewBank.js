@@ -21,7 +21,7 @@ export default function ViewBank() {
 
   const loadBank = async (id) => {
     const result = await axios.get(
-      `${process.env.REACT_APP_API_BASE_URL}/bank/fetchById/${id}`
+      `${window.env?.REACT_APP_API_BASE_URL}/bank/fetchById/${id}`
     );
     if (result.data.listOfBanksDTO.length > 0) {
       setBank(result.data.listOfBanksDTO[0]);

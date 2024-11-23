@@ -54,7 +54,7 @@ function Register() {
     }
 
     try {
-      await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/user/registeruser`, {
+      await axios.post(`${window.env?.REACT_APP_API_BASE_URL}/api/user/registeruser`, {
         userName: userName,
         email: email,
         password: password,

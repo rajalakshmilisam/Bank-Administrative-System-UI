@@ -36,7 +36,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_API_BASE_URL}/api/user/loginuser`,
+        `${window.env?.REACT_APP_API_BASE_URL}/api/user/loginuser`,
         {
           email: email,
           password: password,

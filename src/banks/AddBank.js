@@ -68,7 +68,7 @@ function AddBank() {
 
     if (validateForm()) {
       try {
-        await axios.post(`${process.env.REACT_APP_API_BASE_URL}/bank/addBank`, bank);
+        await axios.post(`${window.env?.REACT_APP_API_BASE_URL}/bank/addBank`, bank);
 
         setSuccessMessage("Successfully added the bank!");
         setNotification("");
