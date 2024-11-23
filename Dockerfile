@@ -1,14 +1,23 @@
 FROM node:latest as builder
 WORKDIR /app
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
-# COPY .env.production .env
-COPY . .
-
-RUN npx update-browserslist-db@latest
+COPY . ./
 RUN npm run build
 
-FROM nginx
+FROM nginx:alpine
+WORKDIR /usr/share/nginx/html
 COPY --from=builder /app/build /usr/share/nginx/html
+
 COPY /nginx/default.conf /etc/nginx/conf.d/default.conf
+
+RUN echo "window.env = {};" > /usr/share/nginx/html/env-config.js
+
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+
 CMD ["nginx", "-g", "daemon off;"]
+
+EXPOSE 80
