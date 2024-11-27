@@ -32,7 +32,7 @@ pipeline{
                 script {
                     sh """
                        docker push ${IMAGE_NAME}:dev-${BUILD_NUMBER}
-                       docker tag ${IMAGE_NAME}:$dev-{BUILD_NUMBER} ${IMAGE_NAME}:latest
+                       docker tag ${IMAGE_NAME}:dev-${BUILD_NUMBER} ${IMAGE_NAME}:latest
                        docker push ${IMAGE_NAME}:latest
                     """
                 }
