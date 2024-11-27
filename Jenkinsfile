@@ -38,6 +38,11 @@ pipeline{
                 }
             }
         }
+        stage("Clean Up Docker Images") {
+            steps {
+                sh 'docker rmi -f $(docker images -a -q)'
+            }
+        }
     }
     post{
         always{
